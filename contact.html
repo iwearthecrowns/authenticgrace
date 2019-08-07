@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <meta charset="utf-8" />
   <link rel="shortcut icon" href="images/assets/authenticgracelogo.png" />
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-<awesome/4.3.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/AuthenticGrace.js"></script>
 
 </head>
@@ -15,7 +15,7 @@
   <div class="header">
 
 <!--Storefront logo-->
-    <img class="storefrontname" src="images/assets/authenticgracelogo_top.png" alt="Authentic Grace Top Logo">
+    <a href="index.html"><img class="storefrontname" src="images/assets/authenticgracelogo_top.png" alt="Authentic Grace Top Logo"></a>
   <div class="topnav">
     <div class="button">
         <span style="font-size: 3em; color: #404e4d;">
@@ -38,21 +38,61 @@
   </div>
 
 <body>
-
-
-  <!--Shopping Categories-->
-  <div class="blog-container">This is the blog!!!</div>
-  <div class="categories">     
-    <figure>
-      <img class="category-img" src="images/clothing/tops/offshoulderruffletop.jpg" alt="Ruffle Top">
-      <figcaption class="caption">Recommended Styles</figcaption>
-    </figure>
-    <figure>
-        <img class="category-img" src="images/clothing/flirty/blacklongsleeve.jpg" alt="Black Long Sleeve Dress">
-        <figcaption class="caption">Last Chance Items</figcaption>
-    </figure>
-    </div>  
-
+<br><br><br><br>
+<div class="container">
+        <form action="action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+          <div class="row">
+                <div class="col-25">
+                  <label for="order">Order Number</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="order" name="order" placeholder="Order Number">
+                </div>
+              </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <select id="subject" name="subject">
+                <option value="generalInquiry">General Inquiry</option>
+                <option value="myOrder">My Order</option>
+                <option value="returnsExchanges">Returns and Exchanges</option>
+                <option value="productInformation">Product Information</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="message">Message</label>
+            </div>
+            <div class="col-75">
+              <textarea id="message" name="message" placeholder="Write your message here..." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    
+    
 
 </body>
 
@@ -82,7 +122,7 @@
             <li>S 10-7</li>
           </ul>
         </div>
-      <div class="child-container"><img src="images/assets/authenticgracelogo_footer2.png">
+      <div class="child-container"><a href="http://iwearthecrowns.github.io/authenticgrace"><img src="images/assets/authenticgracelogo_footer2.png"></a>
         <p>Don't just fit in, stand out!</p>
         <p><span class="child-container-friends">Let's be friends</span></p>
         <a href="#" class="btn facebook">
@@ -111,7 +151,7 @@
       <div class="child-container">
         <ul>
             <li><strong>ABOUT US</strong></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Press</a></li>
